@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6077dbc7-8d58-42c0-9a4c-32cbe13f3ba9",
+		"_postman_id": "128425c4-3f1f-44c1-8e14-dca5dd14cdff",
 		"name": "Sample API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -10,15 +10,15 @@
 			"item": [
 				{
 					"name": "addUser",
-					"id": "bf751fdf-464e-407a-96ce-afa37e5693d3",
+					"id": "c7a9a7a3-adb0-4238-9830-a3320e57680e",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "graphql",
 							"graphql": {
-								"query": "mutation addUser ($name: String!) {\n    addUser (name: $name) {\n        id\n        name\n    }\n}",
-								"variables": "{\n  \"name\": \"\"\n}"
+								"query": "mutation addUser ($name: String!) {\n    addUser (name: $name) {\n        id\n        name\n        age\n    }\n}",
+								"variables": "{\n  \"name\": \"\",\n  \"age\": \"\"\n}"
 							}
 						},
 						"url": {
@@ -31,14 +31,14 @@
 					"response": []
 				}
 			],
-			"id": "492015ff-0b7e-414f-aff8-e31780a5d66d"
+			"id": "b3e2d1dd-75de-4b19-9c3d-b50fda01fe60"
 		},
 		{
 			"name": "queries",
 			"item": [
 				{
 					"name": "user",
-					"id": "04465d61-bafe-493d-9b80-eb87769de31e",
+					"id": "166d2ee2-2bba-4680-922a-375e35229e61",
 					"request": {
 						"method": "POST",
 						"header": [],
@@ -59,7 +59,7 @@
 					"response": []
 				}
 			],
-			"id": "a33f5146-8700-4394-9a74-749b676b961a"
+			"id": "c1ff71b0-32d0-49b9-82be-95bd6f34f3c7"
 		}
 	],
 	"variable": [

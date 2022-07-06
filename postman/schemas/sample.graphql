@@ -5,6 +5,7 @@ schema {
 type User {
   id: String!
   name: String
+  age: String
 }
 type Query {
   user (id: String): User
